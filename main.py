@@ -290,16 +290,16 @@ def new_win():
     canvas.place(x=0, y=0)
 
     # Load images for buttons
-    background_img = PhotoImage(file="background.png")
+    background_img = PhotoImage(file="assets/background.png")
     background = canvas.create_image(
         467.0,
         300.0,
         image=background_img)
-    img0 = PhotoImage(file="img0.png")
-    img1 = PhotoImage(file="img1.png")
-    img2 = PhotoImage(file="img2.png")
-    image_a = ImageTk.PhotoImage(file='c2.png')
-    image_b = ImageTk.PhotoImage(file='c1.png')
+    img0 = PhotoImage(file="assets/img0.png")
+    img1 = PhotoImage(file="assets/img1.png")
+    img2 = PhotoImage(file="assets/img2.png")
+    image_a = ImageTk.PhotoImage(file='assets/c2.png')
+    image_b = ImageTk.PhotoImage(file='assets/c1.png')
 
     # Create a button to trigger audio transcription
     b0 = Button(
@@ -329,19 +329,19 @@ def new_win():
     
 
     # Create and place the toggle buttons
-    button1 = create_toggle_button(window, "img02.png", "img01.png", 1)
+    button1 = create_toggle_button(window, "assets/img02.png", "assets/img01.png", 1)
     button1.place(x = 767, y = 143,
         width = 73,
         height = 28)
     toggle_buttons.append(button1)
 
-    button2 = create_toggle_button(window, "img04.png", "img03.png", 2)
+    button2 = create_toggle_button(window, "assets/img04.png", "assets/img03.png", 2)
     button2.place(x = 684, y = 143,
         width = 73,
         height = 28)
     toggle_buttons.append(button2)
 
-    button3 = create_toggle_button(window, "img05.png", "img06.png", 3)
+    button3 = create_toggle_button(window, "assets/img05.png", "assets/img06.png", 3)
     button3.place(x = 601, y = 143,
         width = 73,
         height = 28)
@@ -365,8 +365,8 @@ def new_win():
         x=561.0, y=340.0,
         width=355,
         height=51)
-
-    img6 = PhotoImage(file = f"img6.png")
+    """
+    img6 = PhotoImage(file = f"assets/img6.png")
     b6 = Button(
         image = img6,
         borderwidth = 0,
@@ -378,7 +378,7 @@ def new_win():
         x = 929, y = 536,
         width = 44,
         height = 44)
-
+    """
     # Create labels to display selected file and path
     l0 = Label(
         text='',
@@ -426,13 +426,13 @@ label2.place(x=8, y=228)
 
 # making animation
 
-image_a = ImageTk.PhotoImage(Image.open('c2.png'))
-image_b = ImageTk.PhotoImage(Image.open('c1.png'))
-image_1 = ImageTk.PhotoImage(Image.open('d1.png'))
-image_2 = ImageTk.PhotoImage(Image.open('d2.png'))
-image_3 = ImageTk.PhotoImage(Image.open('d3.png'))
-image_4 = ImageTk.PhotoImage(Image.open('d4.png'))
-image_5 = ImageTk.PhotoImage(Image.open('d5.png'))
+image_a = ImageTk.PhotoImage(Image.open('assets/c2.png'))
+image_b = ImageTk.PhotoImage(Image.open('assets/c1.png'))
+image_1 = ImageTk.PhotoImage(Image.open('assets/d1.png'))
+image_2 = ImageTk.PhotoImage(Image.open('assets/d2.png'))
+image_3 = ImageTk.PhotoImage(Image.open('assets/d3.png'))
+image_4 = ImageTk.PhotoImage(Image.open('assets/d4.png'))
+image_5 = ImageTk.PhotoImage(Image.open('assets/d5.png'))
 
 d1 = Label(w, image=image_1, border=0, relief=SUNKEN,
            bg='#A065CD').place(x=15, y=125)
